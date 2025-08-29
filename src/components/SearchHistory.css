@@ -1,0 +1,79 @@
+.search-history {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.light-theme .search-history {
+  color: #333;
+}
+
+.dark-theme .search-history {
+  color: #e2e8f0;
+}
+
+.search-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.search-history-header h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.dark-theme .search-history-header h4 {
+  color: #cbd5e0;
+}
+
+.clear-history {
+  background: none;
+  border: none;
+  color: #4e54c8;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dark-theme .clear-history {
+  color: #90cdf4;
+}
+
+.clear-history:hover {
+  text-decoration: underline;
+}
+
+.search-history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.history-item {
+  background: #f0f2f5;
+  border: none;
+  border-radius: 16px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: #4e54c8;
+  transition: background-color 0.2s;
+}
+
+.dark-theme .history-item {
+  background: #4a5568;
+  color: #90cdf4;
+}
+
+.history-item:hover {
+  background: #e9ecef;
+}
+
+.dark-theme .history-item:hover {
+  background: #2d3748;
+}

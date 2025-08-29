@@ -1,0 +1,114 @@
+.statistics-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.light-theme .statistics-container {
+  background-color: white;
+}
+
+.dark-theme .statistics-container {
+  background-color: #2d3748;
+  color: #e2e8f0;
+}
+
+.statistics-container h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #4e54c8;
+}
+
+.dark-theme .statistics-container h2 {
+  color: #90cdf4;
+}
+
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-card {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.dark-theme .stat-card {
+  background-color: #4a5568;
+}
+
+.stat-card h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.dark-theme .stat-card h3 {
+  color: #cbd5e0;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4e54c8;
+}
+
+.dark-theme .stat-value {
+  color: #90cdf4;
+}
+
+.course-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.course-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.course-stat-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dark-theme .progress-bar {
+  background-color: #4a5568;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4e54c8;
+  border-radius: 5px;
+}
+
+.dark-theme .progress {
+  background-color: #90cdf4;
+}
+
+@media (max-width: 768px) {
+  .statistics-container {
+    padding: 1rem;
+  }
+  
+  .stat-cards {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,74 @@
+/* Light theme styles */
+.light-theme {
+  --bg-primary: #f5f5f7;
+  --bg-secondary: #ffffff;
+  --text-primary: #333333;
+  --text-secondary: #6c757d;
+  --accent-color: #4e54c8;
+  --border-color: #e9ecef;
+}
+
+/* Dark theme styles */
+.dark-theme {
+  --bg-primary: #1a202c;
+  --bg-secondary: #2d3748;
+  --text-primary: #e2e8f0;
+  --text-secondary: #cbd5e0;
+  --accent-color: #90cdf4;
+  --border-color: #4a5568;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1.5rem 0;
+}
+
+.view-toggle {
+  max-width: 1200px;
+  margin: 0 auto 1.5rem;
+  padding: 0 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.view-toggle button {
+  padding: 0.6rem 1.2rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #6c757d;
+}
+
+.view-toggle button:hover {
+  color: #4e54c8;
+}
+
+.view-toggle button.active {
+  background-color: #4e54c8;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem 0;
+  }
+  
+  .view-toggle {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+}

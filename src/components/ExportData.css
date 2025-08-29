@@ -1,0 +1,50 @@
+.export-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.light-theme .export-container {
+  background-color: white;
+}
+
+.dark-theme .export-container {
+  background-color: #2d3748;
+  color: #e2e8f0;
+}
+
+.export-container h3 {
+  margin-top: 0;
+  color: #4e54c8;
+  margin-bottom: 0.5rem;
+}
+
+.dark-theme .export-container h3 {
+  color: #90cdf4;
+}
+
+.export-container p {
+  margin-bottom: 1rem;
+  color: #6c757d;
+}
+
+.dark-theme .export-container p {
+  color: #cbd5e0;
+}
+
+.export-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .export-container {
+    padding: 1rem;
+  }
+  
+  .export-buttons {
+    flex-direction: column;
+  }
+}
