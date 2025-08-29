@@ -1,46 +1,77 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Student Management Dashboard
 
-## Available Scripts
+A modern, responsive single-page application for managing students, built with React and TypeScript. This project was developed by Yashodip More as a prework assignment for CodeIndia Fellowship.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Add, Edit, and View Students**: Manage student records with name, email, enrolled course, and profile image.
+- **Form Validation**: Required fields, email format, and image upload validation.
+- **Course List from API**: Fetches available courses from a mock API.
+- **Responsive UI**: Works beautifully on mobile and desktop.
+- **Dark Mode**: Toggle between light and dark themes.
+- **Student Statistics**: Dashboard with total students, most popular course, and distribution.
+- **Search & Filter**: Search students by name/email and filter by course.
+- **Search History**: Quick access to recent searches.
+- **Pagination**: Efficient navigation for large student lists.
+- **Export Data**: Download student data as CSV or JSON.
+- **Mentoring Guide**: In-app and markdown guide explaining key concepts (async/await, event loop, hoisting, React best practices).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React (with Hooks & Context API)
+- TypeScript
+- Custom CSS (responsive, accessible, and themed)
+- LocalStorage for persistence
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+- Node.js (v16 or above recommended)
+- npm
 
-### `npm run build`
+### Installation
+1. Clone the repository or download the source code.
+2. Navigate to the project directory:
+	```sh
+	cd student-management-dashboard
+	```
+3. Install dependencies:
+	```sh
+	npm install
+	```
+4. Start the development server:
+	```sh
+	npm start
+	```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+student-management-dashboard/
+  src/
+	 components/      # Reusable UI components
+	 context/         # Global state/context providers
+	 hooks/           # Custom React hooks
+	 services/        # API service layer
+	 types/           # TypeScript types
+	 App.tsx          # Main app component
+	 ...
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Key Concepts Demonstrated
 
-### `npm run eject`
+- **Async/Await**: All API calls use async/await for clean asynchronous code.
+- **Event Loop**: Mock API uses setTimeout to simulate network delay and demonstrate event loop behavior.
+- **Hoisting**: Modern JS practices (const/let, arrow functions) avoid hoisting issues.
+- **React Best Practices**: Functional components, hooks, context, memoization, and clean separation of concerns.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Mentoring Guide
+See [`MENTORING_GUIDE.md`](./MENTORING_GUIDE.md) for a concise explanation of how this project demonstrates key concepts for students.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Credits
+Developed by Yashodip More as a prework assignment for CodeIndia Fellowship.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+This project is for educational purposes.
